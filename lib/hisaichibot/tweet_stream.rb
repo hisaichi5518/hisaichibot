@@ -1,7 +1,7 @@
 require 'tweetstream'
 
 module Hisaichibot
-  class TwitterFav
+  class TweetStream
     attr_accessor :message
     def initialize(m)
       @message = m
