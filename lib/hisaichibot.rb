@@ -1,4 +1,4 @@
 require "hisaichibot/version"
-
-module Hisaichibot
-end
+require 'hisaichibot/ping_pong'
+require 'hisaichibot/clockwork'
+require 'hisaichibot/twitter_fav'
