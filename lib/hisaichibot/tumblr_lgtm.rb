@@ -9,13 +9,12 @@ module Hisaichibot
 
     def execute
       client = Tumblr::Client.new
-      posts  = client.tagged("吉高由里子")
+      posts  = client.tagged(@tag)
 
       photo_urls = [];
       posts.each do |post|
         if post["type"] == "photo"
           post["photos"].each do |photo|
-            p photo["alt_sizes"]
             photo_urls << photo["alt_sizes"][1]["url"]
           end
         end
